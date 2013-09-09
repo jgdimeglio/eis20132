@@ -5,7 +5,7 @@ describe PrintNumbers do
 
   describe 'initialize' do
 
-	it 'should should set value' do
+	it 'should set value' do
            printNumbers=PrintNumbers.new(100)
            printNumbers.to.should eq 100
         end
