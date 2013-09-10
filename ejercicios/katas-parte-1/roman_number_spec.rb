@@ -22,6 +22,39 @@ describe RomanNumber do
 
   end
 
+  describe 'sum' do
+
+    it 'should return XXXVII when adding XVII and XX' do
+      i1 = RomanNumber.new('XX')
+      i2 = RomanNumber.new('XVII')
+      result = i2.add i1
+      result.should eq RomanNumber.new('XXXVII')
+    end
+
+  end
+
+  describe 'sum' do
+
+    it 'should return DLXVII when adding CCXXXIV and CCCXXXIII' do
+      i1 = RomanNumber.new('CCXXXIV')
+      i2 = RomanNumber.new('CCCXXXIII')
+      result = i2.add i1
+      result.should eq RomanNumber.new('DLXVII')
+    end
+
+  end
+
+  describe 'sum' do
+
+    it 'should return DLXVII when adding CDLI and DLXVII' do
+      i1 = RomanNumber.new('CDLI')
+      i2 = RomanNumber.new('DLXVII')
+      result = i2.add i1
+      result.should eq RomanNumber.new('MXVIII')
+    end
+
+  end
+
   describe 'to decimal' do
 
     it 'should return 24 when i convert XXIV' do
