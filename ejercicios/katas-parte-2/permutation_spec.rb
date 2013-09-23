@@ -19,7 +19,7 @@ describe Permutation do
 	   permutations.length.should eq 6
         end
 
-	it 'should be 24 the amount of permutations of ABC ' do
+	it 'should be 24 the amount of permutations of ABCD ' do
            permutation=Permutation.new('ABCD')
            permutations=permutation.getPermutations()
 	   permutations.length.should eq 24
@@ -33,18 +33,8 @@ describe Permutation do
 
            permutation=Permutation.new('ABC')
 	   resultPermutations=permutation.getPermutations
+           resultPermutations.should eq ['ABC','ACB','BAC','BCA','CAB','CBA']
 
-           values=['ABC','ACB','BAC','BCA','CAB','CBA']
-           cant=0
-	   values.each do |value|
-		resultPermutations.each do |valuePermutation|
-			if(valuePermutation == value )
-				cant+=1
-			end
-		end
-           cant.should eq 1
-	   cant=0
-	   end
         end
     end
 
