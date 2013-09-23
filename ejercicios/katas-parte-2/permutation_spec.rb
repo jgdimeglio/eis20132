@@ -19,7 +19,7 @@ describe Permutation do
 	   permutations.length.should eq 6
         end
 
-	it 'should be 24 the amount of permutations of ABC ' do
+	it 'should be 24 the amount of permutations of ABCD ' do
            permutation=Permutation.new('ABCD')
            permutations=permutation.getPermutations()
 	   permutations.length.should eq 24
