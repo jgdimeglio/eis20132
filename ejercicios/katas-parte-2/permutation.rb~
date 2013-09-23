@@ -5,11 +5,10 @@ class Permutation
 	end
 
 	def getPermutations()
-		word = @value;
 		permutations=[]
 		i=0
-		pword = word.chars.to_a.permutation.to_a
-		pword.each do |p|
+		chars = @value.chars.to_a.permutation.to_a
+		chars.each do |p|
 		   permutations[i]=p.join
 		   i+=1
 		end 

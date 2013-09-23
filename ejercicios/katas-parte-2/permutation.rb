@@ -17,8 +17,7 @@ class Permutation
 
 end
 
-p=Permutation.new('ABC')
-puts p.getPermutations.length
+
 
 
 

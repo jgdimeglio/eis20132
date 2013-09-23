@@ -29,7 +29,7 @@ describe Permutation do
 
     describe 'permutations' do
 
-	it 'should be ABC,ACB,BAC,BCA,CAB,CBA the permutations' do
+	it 'should be ABC,ACB,BAC,BCA,CAB,CBA the permutations of ABC' do
 
            permutation=Permutation.new('ABC')
 	   resultPermutations=permutation.getPermutations
