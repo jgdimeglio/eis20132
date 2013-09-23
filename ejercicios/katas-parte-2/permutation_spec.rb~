@@ -42,7 +42,7 @@ describe Permutation do
 				cant+=1
 			end
 		end
-           cant.should eq 1
+   cant.should eq 1
 	   cant=0
 	   end
         end
