@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative './prints_numbers'
+require_relative './number_game.rb'
 
 describe PrintNumbers do
 
