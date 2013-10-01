@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'ahorcado.rb'
+require_relative 'juego.rb'
 
 describe Ahorcado do
 
