@@ -10,59 +10,28 @@ class RomanNumber
 =begin
 Dado un entero lo convierte en numero romano
 =end
-		    cadena = ""
-		    while n>=1000
-			cadena+="M"
-			n-=1000
-		    end
-		    if n>=900
-			cadena+="DM"
-			n-=900
-		    end
-		    if n>=500
-			cadena+="D"
-			n-=500
-		    end
-		    if n>=400
-			cadena+="CD"
-			n-=400
-		    end
-		    while n>=100
-			cadena+="C"
-			n-=100
-		    end
-		    if n>=90
-			cadena+="XC"
-			n-=90
-		    end
-		    if n>=50
-			cadena+="L"
-			n-=50
-		    end
-		    if n>=40
-			cadena+="XL"
-			n-=40
-		    end
-		    while n>=10
-			cadena+="X"
-			n-=10
-		    end
-		    if n>=9
-			cadena+="IX"
-			n-=9
-		    end
-		    if n>=5
-			cadena+="V"
-			n-=5
-		    end
-		    if n>=4
-			cadena+="IV"
-			n-=4
-		    end
-		    while n>=1
-        	        cadena+="I";
-                        n-=1;
-                    end
+		inicial=1000
+		cadena = ""
+		valores=[9,5,4]
+		values={1 =>'I' ,4 =>'IV' ,5 =>'V' ,9 =>'IX' ,10 =>'X' ,40 =>'XL' ,
+			50 =>'L' , 90 => 'XC' ,100 => 'C' ,400 => 'CD' , 500 => 'D' ,
+			900 => 'DM' ,1000=>'M'}
+		while n != 0
+			while n>=inicial
+				cadena+=values[inicial]
+				n-=inicial
+			end
+			inicial/=10
+
+			if inicial !=0
+				for i in (0..valores.length-1)
+					if n >= valores[i] * inicial
+						cadena+= values[valores[i]*inicial ]
+						n-=valores[i]*inicial
+					end
+				end
+			end
+		end
 		cadena
 	end
 
