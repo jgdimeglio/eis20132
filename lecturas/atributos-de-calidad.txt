@@ -1,0 +1,21 @@
+La performance es la capacidad de respuesta que tiene un sistema  al ejecutar una 
+determinada acción en un intervalo de tiempo determinado.
+Se puede medir en términos de latencia y throughput.
+La latencia es el tiempo que tarda en  responder a cualquier evento.
+El throughput es la cantidad de eventos que un sistema puede procesar en un periodo de 
+tiempo.
+La performance de una aplicación puede afectar directamente a su escalabilidad. Al mejorar la
+performance de una aplicación puede mejorar la escalabilidad.
+
+Algunos puntos a tener en cuanta al hablar de performance:
+
+*Aumento del consumo de memoria:asegurar un buen diseño de cache,para tener menos accesos
+a memoria principal
+
+*Aumento del tiempo de respuesta del cliente
+
+*Aumento del procesamiento del servidos de base de datos:Realizar consultas eficientes,por ejemplo no
+traer datos que nunca se van a utilizar.
+
+*Aumento del  consumo del ancho de banda de la red:Reducir al mínimo la cantidad de datos enviados a través 
+de la red.
