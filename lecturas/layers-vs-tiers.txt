@@ -1,6 +1,6 @@
 La gran diferencia entre las arquitecturas layers y tiers es que tiers está orientado a la distribución física de las
 capas,es decir donde corre la aplicacion y los procesos,normalmente incluye una capa de cliente o Front-End(hardware y 
 software donde se ejecuta la interfaz de usuario) ,una capa de Middleware(capaz de recibir a través de la red) y otra
-capa Back-End(normalmente un servidor de base de datos).En cambio las arquitecturas tiers se orienta a una distribución
+capa Back-End(normalmente un servidor de base de datos).En cambio las arquitecturas layers se orientan a una distribución
 lógica de las capas, es decir como esta estructurado el código.Esta arquitectura normalmente incluye una capa de 
 presentación, una capa de negocios, una capa de acceso a datos, una capa de entidades de negocio y una capa de datos.
